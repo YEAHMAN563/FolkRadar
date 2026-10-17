@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"E:/webradar/collector/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

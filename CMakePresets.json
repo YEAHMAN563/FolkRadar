@@ -1,0 +1,12 @@
+{
+  "version": 6,
+  "configurePresets": [{
+    "name": "windows-release",
+    "displayName": "Windows Release",
+    "generator": "Visual Studio 18 2026",
+    "binaryDir": "${sourceDir}/collector/build",
+    "architecture": "x64",
+    "cacheVariables": { "CMAKE_CXX_STANDARD": "17" }
+  }],
+  "buildPresets": [{ "name": "windows-release", "configurePreset": "windows-release", "configuration": "Release" }]
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Folk Valley Radar</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div class="brand"><div class="brand-mark">FV</div><div><div class="kicker">FOLK VALLEY</div><h1>Radar</h1></div></div>
+      <div class="top-status"><span class="status-dot"></span><span id="connection">CONNECTING</span></div>
+    </header>
+    <section class="matchbar">
+      <div class="match-stat"><span>MAP</span><strong id="map">DETECTING…</strong></div>
+      <div class="match-stat"><span>DATA SOURCE</span><strong id="source">—</strong></div>
+      <div class="match-stat grow"><span>ROUND STATUS</span><strong id="status">Waiting for collector</strong></div>
+      <div class="round-badge" id="count">0 PLAYERS</div>
+    </section>
+    <section class="dashboard">
+      <aside class="team-panel terrorists"><div class="team-header"><div><span class="team-accent"></span><span class="team-label">TERRORISTS</span></div><span class="team-side">T</span></div><div id="t-list" class="roster"></div></aside>
+      <section class="radar-panel"><div class="radar-head"><span></span><strong id="bomb-timer" class="bomb-timer">BOMB —</strong></div><div id="radar" class="radar"><div id="map-missing" class="map-missing" hidden></div><div class="grid"></div><div id="local-fov" class="local-fov"></div><div id="site-a" class="site site-a">A</div><div id="site-b" class="site site-b">B</div><div class="midline"></div><div id="markers"></div></div><div class="radar-foot"><span><i class="legend-dot ct"></i> CT</span><span><i class="legend-dot t"></i> T</span></div></section>
+      <aside class="team-panel counter-terrorists"><div class="team-header"><div><span class="team-accent"></span><span class="team-label">COUNTER-TERRORISTS</span></div><span class="team-side">CT</span></div><div id="ct-list" class="roster"></div></aside>
+    </section>
+  </main>
+  <script src="app.js?v=20261017-9"></script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,10 @@
+^E:\WEBRADAR\COLLECTOR\BUILD\CMAKEFILES\AEFBF250C956237BD268F3C12E778F4D\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/webradar/collector -BE:/webradar/collector/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/webradar/collector/build/FolkValleyRadar.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
